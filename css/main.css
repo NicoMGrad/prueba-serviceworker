@@ -1,0 +1,82 @@
+body {
+    background: url(../img/green.jpg) repeat;
+}
+
+.app-container {
+    padding: 20px;
+    margin: 0 auto 50px auto;
+    max-width: calc(75vw);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: 1 1 auto;
+    background-color: rgba(255,255,255, 0.5);
+    border-radius: 10px;
+}
+
+table thead {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+table tbody tr td:nth-child(1),
+table tbody tr td:nth-child(2) {
+    font-weight: bold;
+    font-size: 18px;
+    width: 100px;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: pre;
+}
+
+body .offline-banner {
+    display: flex;
+    width: calc(100wv);
+    background-color: green;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+body.offline .offline-banner {
+    background-color: red;
+    animation: animate 1.5s linear infinite;
+}
+
+body.offline .st-online {
+    display: none;
+}
+
+body:not(.offline) .st-offline {
+    display: none;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+body #fulbito {
+    display: none;
+    margin: 0 auto;
+}
+
+body.offline #fulbito {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+}

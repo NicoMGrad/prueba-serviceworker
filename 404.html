@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="./manifest.webmanifest"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Resetter -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-5.0.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Clase 08 - Service Worker</title>
+  </head>
+  <body>
+    <div class="offline-banner">
+        <div>Status:
+            <span class="st-offline">OFFLINE!</span>
+            <span class="st-online">ONLINE!</span>
+        </div>
+    </div>
+
+    <div class="app-container container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <section class="contact-form">
+                            <h3>NOT FOUND!</h3>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12">
+                <div id="fulbito"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/soccer-api.js"></script> 
+
+
+    <script src='https://d309knd7es5f10.cloudfront.net/createjs_1.1_min.js'></script>
+    <script src='https://d309knd7es5f10.cloudfront.net/zim_7.0.1.js'></script>
+    <script src='https://d309knd7es5f10.cloudfront.net/codepen/icon.js'></script>
+    <script src='https://d309knd7es5f10.cloudfront.net/Box2dWeb-2.1.a.3.min.js'></script>
+    <script src='https://d309knd7es5f10.cloudfront.net/physics_1.0.js'></script>
+    <script src='https://d309knd7es5f10.cloudfront.net/game_1.0.4.js'></script>
+    <script  src="./js/game.js"></script>
+  </body>
+</html>
